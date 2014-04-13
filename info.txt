@@ -1,0 +1,9 @@
+OpenFlow Controller Capabilities Checker
+
+The OpenFlow protocol is layered on top of TCP, and prescribes the use of TLS. Controllers should listen on TCP port 6653 for switches that want to set up a connection. Earlier versions of the OpenFlow protocol unofficially used port 6633.
+
+1. take an IP or range
+2. Attempt to connect on 6653. Attempt to connect on 6633.
+3. Interrogate host. Return OF server type and version(s) supported.
+4. If on same lan, do MAC heuristic to guess VM/PM
+
